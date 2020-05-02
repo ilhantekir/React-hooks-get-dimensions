@@ -21,10 +21,10 @@ const  App = () => {
 const  componentRef = useRef()
 const { width, height } = GetDimensions(componentRef);
 return (
-	<div ref={componentRef}>
-		<p>width: {width}px</p>
-		<p>height: {height}px</p>
-	</div>
+     <div ref={componentRef}>
+         <p>width: {width}px</p>
+         <p>height: {height}px</p>
+     </div>
 )}
 export  default  App;
 ```
@@ -39,10 +39,10 @@ import  GetDimensions  from  'react-hooks-get-dimensions';
 const  App = () => {
 const { width, height } = GetDimensions();
 return (
-	<div>
-		<p>width: {width}px</p>
-		<p>height: {height}px</p>
-	</div>
+     <div>
+          <p>width: {width}px</p>
+          <p>height: {height}px</p>
+     </div>
 )}
 export  default  App;
 ```
