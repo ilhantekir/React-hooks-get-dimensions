@@ -1,48 +1,34 @@
-# React hooks get dimensions
+# react-hooks-get-dimensions
 
-React-hooks-get-dimensions is a helpful to get a react component's or window dimensions.
-Uses a [`Window: resize event`](https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event) to detect when an element's dimensions have changed.
+> Get a react component&#x27;s or window dimensions
 
+[![NPM](https://img.shields.io/npm/v/react-hooks-get-dimensions.svg)](https://www.npmjs.com/package/react-hooks-get-dimensions) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
-`yarn add react-hooks-get-dimensions`
-
-`npm install react-hooks-get-dimensions --save`
-
-## Measure Component
-
-### Example
-
-```javascript
-import  React, { useRef } from  'react';
-import  GetDimensions  from  'react-hooks-get-dimensions';
-const  App = () => {
-const  componentRef = useRef()
-const { width, height } = GetDimensions(componentRef);
-return (
-     <div ref={componentRef}>
-         <p>width: {width}px</p>
-         <p>height: {height}px</p>
-     </div>
-)}
-export  default  App;
+```bash
+npm install --save react-hooks-get-dimensions
 ```
 
+## Usage
 
-## Measure Viewport
+```jsx
+import React, { Component } from 'react'
 
-### Example
+import { useMyHook } from 'react-hooks-get-dimensions'
 
-```javascript
-import  GetDimensions  from  'react-hooks-get-dimensions';
-const  App = () => {
-const { width, height } = GetDimensions();
-return (
-     <div>
-          <p>width: {width}px</p>
-          <p>height: {height}px</p>
-     </div>
-)}
-export  default  App;
+const Example = () => {
+  const example = useMyHook()
+  return (
+    <div>{example}</div>
+  )
+}
 ```
+
+## License
+
+MIT © [ilhantekir](https://github.com/ilhantekir)
+
+---
+
+This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
