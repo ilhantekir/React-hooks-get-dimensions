@@ -1,6 +1,6 @@
 {
   "name": "react-hooks-get-dimensions",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get a react component's or window dimensions",
   "main": "index.js",
   "type": "module",
