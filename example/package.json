@@ -1,9 +1,9 @@
 {
   "name": "react-hooks-get-dimensions-example",
   "homepage": "https://ilhantekir.github.io/react-hooks-get-dimensions",
-  "version": "0.0.0",
+  "version": "1.1.0",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "link:../node_modules/react",

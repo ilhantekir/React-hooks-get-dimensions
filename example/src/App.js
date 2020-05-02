@@ -1,12 +1,13 @@
-import React from 'react'
-import { useMyHook } from 'react-hooks-get-dimensions'
+import React, { useRef }  from 'react';
+import { useGetDimensions } from 'react-hooks-get-dimensions'
 
-const App = () => {
-  const example = useMyHook()
+const  App = () => {
+  const  componentRef = useRef()
+  const { width, height } = useGetDimensions(componentRef);
   return (
-    <div>
-      {example}
-    </div>
-  )
-}
-export default App
+       <div ref={componentRef}>
+           <p>width: {width}px</p>
+           <p>height: {height}px</p>
+       </div>
+  )}
+  export  default  App;
